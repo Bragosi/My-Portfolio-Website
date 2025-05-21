@@ -5,4 +5,10 @@
 
 :root{
   color-scheme: dark;
+
+}
+@layer utilities {
+  .lg\:px-15 {
+    @apply px-[3.75rem];
+  }
 }
