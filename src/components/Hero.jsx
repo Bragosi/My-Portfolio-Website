@@ -1,52 +1,83 @@
-import heroBackground from '../images/hero-background.jpg';
-import curve from '../images/curve (1).png';
 import Button from './Button';
-import { BackgroundCircles, BottomLine } from './design/HeroDesign';
 import Resume from '../pdf/Resume.pdf';
-import background from '../images/background.jpg'
+import Boluwatife from '../images/boluwatife.png';
+import { gsap } from 'gsap';
+import React, { useEffect, useRef } from 'react';
+import { Gradient } from './design/Gradient';
 
 const Hero = () => {
+  useEffect(() => {
+    const letters = textRef.current.querySelectorAll("span");
+    gsap.fromTo(
+      '#home',
+      { y: 100, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1 }
+    );
+    gsap.fromTo(
+      letters,
+      { opacity: 0, x: 20 },
+      { opacity: 1, x: 0, stagger: 0.05, duration: 0.5, ease: "power2.inOut" }
+    );
+  }, []);
+
+  const text =
+    "I transform my client's imaginations into realities by crafting modern, user-friendly web experiences that bring ideas to life.";
+  const textRef = useRef(null);
+
   return (
     <section
-      className="pt-[15rem] -mt-[5.25rem] flex flex-col xl:flex-row items-center xl:items-start justify-center min-h-screen gap-5 bg-cover bg-no-repeat"
-      style={{
-        backgroundImage: `url(${heroBackground})`,
-        background: 'cover',
-      }}
+      id="home"
+      className="pt-[8rem]  md:pt-[10rem] flex flex-col-reverse lg:flex-row items-center justify-center h-screen gap-8 bg-center bg-no-repeat"
     >
-      <div className="container relative xl:w-2/5 text-center xl:text-left">
-        <p className="mx-auto mb-3 text-n-2">Hi, I'm Boluwatife,</p>
-
-        <h1 className="text-2xl xl:text-4xl font-code ">
-          I transform my clients' imaginations into realities <br /> by crafting
-          modern, and user-friendly web experiences <br /> that bring ideas to{' '}
-          <span className="inline-block relative">
-            life.
-            <img
-              src={curve}
-              alt="curve"
-              width={250}
-              height={28}
-              className="absolute top-full left-0 w-full xl:mt-0.5"
-            />
-          </span>
-        </h1>
-        <Button white={true} className="mt-5">
-          <a
-            href={Resume}
-            download="Oladejo_Boluwatife_Resume.pdf"
-            className="inline-block"
-          >
-            Download Resume
-          </a>
-        </Button>
+      {/* Left Content */}
+      <div className="relative px-6 md:px-10 lg:w-1/2 flex flex-col items-start">
+        <div
+          className="p-6 border rounded-md w-full max-w-lg bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 border-transparent"
+          style={{
+            backgroundClip: 'padding-box, border-box',
+            backgroundOrigin: 'padding-box, border-box',
+            padding: '2px',
+          }}
+        >
+          <div className="p-6 bg-black rounded-[inherit]">
+            <p className="text-lg font-medium text-gray-600">Hello, I'm a</p>
+            <h3 className="mt-2 text-3xl md:text-4xl font-semibold">
+              Front-End <span className="text-n-6">Developer</span>
+            </h3>
+            <p
+              ref={textRef}
+              className="mt-4 text-gray-700 text-base md:text-lg leading-relaxed"
+            >
+              {text.split('').map((char, i) => (
+                <span key={i}>{char}</span>
+              ))}
+            </p>
+            <div className="flex items-center gap-4 mt-6">
+              <Button white>
+                <a
+                  href={Resume}
+                  download="Oladejo_Boluwatife_Resume.pdf"
+                  className="inline-block"
+                >
+                  Download Resume
+                </a>
+              </Button>
+              <Button>
+                <a href="#">Contact Me</a>
+              </Button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className='border w-1/2 items-center justify-center '>
-            <img src={background} alt="background" width={400} height={150} />
-      </div >
-      <BackgroundCircles/>
-      <BackgroundCircles/>
-      <BottomLine />
+
+      {/* Right Content */}
+      <div className="relative lg:w-1/2 flex justify-center  mt-[10rem]">
+        <img
+          src={Boluwatife}
+          alt="Boluwatife"
+          className="max-w-[200px] md:max-w-[300px] lg:max-w-[400px] rounded-lg shadow-lg"
+        />
+      </div>
     </section>
   );
 };
