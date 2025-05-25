@@ -11,12 +11,12 @@ const Hero = () => {
     gsap.fromTo(
       '#home',
       { y: 100, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1 }
+      { y: 0, opacity: 1, duration: 2 }
     );
     gsap.fromTo(
       letters,
       { opacity: 0, x: 20 },
-      { opacity: 1, x: 0, stagger: 0.05, duration: 0.5, ease: "power2.inOut" }
+      { opacity: 1, x: 0, stagger: 0.06, duration: 0.5, ease: "power2.inOut" }
     );
   }, []);
 
