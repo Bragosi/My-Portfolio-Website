@@ -67,7 +67,7 @@ const About = () => {
   }, []);
 
   const text =
-    "Hi! 👋 I’m Boluwatife, a front-end developer skilled in React, Next.js, and TypeScript. I specialize in crafting functional, user-friendly web applications with clean, efficient code. With expertise and experience, I create engaging designs and animations. Let’s collaborate to build something amazing! 🚀";
+    "Hi! 👋 I’m Oladejo Boluwatife, popularly known in the Tech space as Bragosi, a front-end developer skilled in React, Next.js, and TypeScript. I specialize in crafting functional, user-friendly web applications with clean, efficient code. With expertise and experience, I create engaging designs and animations. Let’s collaborate to build something amazing! 🚀";
 
   return (
     <section id="about" className="mt-[10rem] px-6 md:px-12 lg:px-24 flex flex-col xl:flex-row">
@@ -102,7 +102,7 @@ const About = () => {
             />
           </span>
         </h1>
-        <p ref={textRef} className="text-lg leading-relaxed text-gray-700 text-center md:text-left">
+        <p ref={textRef} className="text-lg leading-relaxed text-gray-700 text-center md:text-left font-montserrat">
           {text.split("").map((char, i) => (
             <span key={i}>{char}</span>
           ))}

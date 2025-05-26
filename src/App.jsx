@@ -2,7 +2,8 @@ import Header from "./components/Header";
 import ButtonGradient from "./assets/Svg/ButtonGradient"
 import Hero from "./components/Hero";
 import About from "./components/About"
-import Skills from "./components/Skills";
+import Services from "./components/Services";
+import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
@@ -10,7 +11,8 @@ export default function App() {
         <Header/>
         <Hero/>
         <About/>
-        <Skills/>
+        <Services/>
+        <Footer/>
     </div>
     <ButtonGradient/>
 
