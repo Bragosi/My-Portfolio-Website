@@ -1,13 +1,41 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import emailjs from 'emailjs-com';
-import  Button  from '../components/Button'
-import curve from '../images/curve (1).png'
-function Contact() {
+import Button from '../components/Button';
+import curve from '../images/curve (1).png';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
+const Contact = () => {
+  useEffect(() => {
+    const animation = gsap.fromTo(
+      '#contact',
+      { y: 100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        ease: 'power2.inOut',
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: '#contact',
+          start: 'top 80%',
+        },
+      }
+    );
+
+    return () => {
+      animation.kill();
+    };
+  }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
+
+  const formRef = useRef(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -16,40 +44,49 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!formRef.current) {
+      alert('Form reference not found.');
+      return;
+    }
+
     emailjs
       .sendForm(
-        'service_ftoip7k', // Replace with your EmailJS service ID
-        'template_csx8gws', // Replace with your EmailJS template ID
-        e.target,
-        'M9VaJvXcsHyUlL0gm' // Replace with your EmailJS user ID
+        'service_ftoip7k',
+        'template_csx8gws',
+        formRef.current,
+        'M9VaJvXcsHyUlL0gm'
       )
       .then(() => {
         alert('Message sent successfully!');
-        setFormData({ name: '', email: '', message: '' }); // Reset form fields
+        setFormData({ name: '', email: '', message: '' });
       })
-      .catch(() => {
+      .catch((error) => {
+        console.error('EmailJS Error:', error);
         alert('Failed to send message. Please try again.');
       });
   };
 
   return (
     <section
-    id='contact'
-    className='mt-5'
+      id="contact"
+      className="mt-5"
       style={{
-        backgroundColor: '',
         padding: '20px',
         color: 'white',
         textAlign: 'center',
       }}
     >
-      <h2 className='h2 font-palanquin flex flex-col mb-5 '>Contact Me 
-        <span className='relative flex justify-center items-center'>
-            <img src={curve} alt="curve" width={220} height={70} /></span></h2>
-      <form onSubmit={handleSubmit}>
+      <h2 className="h2 font-palanquin flex flex-col mb-5">
+        Contact Me
+        <span className="relative flex justify-center items-center">
+          <img src={curve} alt="curve" width={220} height={70} />
+        </span>
+      </h2>
+      <form ref={formRef} onSubmit={handleSubmit}>
         <div style={{ marginBottom: '10px' }}>
           <input
-            className='xl:w-[60%] w-[80%]'
+            className="xl:w-[60%] w-[80%]"
             type="text"
             name="name"
             placeholder="Your Name"
@@ -67,7 +104,7 @@ function Contact() {
         </div>
         <div style={{ marginBottom: '10px' }}>
           <input
-            className='xl:w-[60%] w-[80%]'
+            className="xl:w-[60%] w-[80%]"
             type="email"
             name="email"
             placeholder="Your Email"
@@ -85,7 +122,7 @@ function Contact() {
         </div>
         <div style={{ marginBottom: '10px' }}>
           <textarea
-          className='xl:w-[60%] w-[80%]'
+            className="xl:w-[60%] w-[80%]"
             name="message"
             placeholder="Your Message"
             value={formData.message}
@@ -117,6 +154,6 @@ function Contact() {
       </form>
     </section>
   );
-}
+};
 
 export default Contact;

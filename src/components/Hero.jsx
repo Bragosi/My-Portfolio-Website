@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="pt-[8rem]  md:pt-[10rem] flex flex-col-reverse lg:flex-row items-center justify-center h-screen gap-8 bg-center bg-no-repeat"
+      className="pt-[8rem]  md:pt-[10rem] flex flex-col-reverse lg:flex-row items-center justify-center h-screen gap-8 bg-n-7"
     >
       {/* Left Content */}
       <div className="relative px-6 md:px-10 lg:w-1/2 flex flex-col items-start">
@@ -71,7 +71,7 @@ const Hero = () => {
       </div>
 
       {/* Right Content */}
-      <div className="relative lg:w-1/2 flex justify-center  mt-[10rem]">
+      <div className="relative lg:w-1/2 flex justify-center md:mt-[12rem] mt-[4rem] xl:mt-[4rem]">
         <img
           src={Boluwatife}
           alt="Boluwatife"

@@ -1,4 +1,3 @@
-import  bragosi  from "../images/bragosi.png";
 import { navigation } from "../constants";
 import { useLocation } from "react-router-dom";
 import Button from "./Button";
