@@ -79,9 +79,9 @@ const About = () => {
         <img
           src={about}
           alt="about"
-          width={800}
-          height={730}
-          className="border-n-14 border rounded-md"
+          width={250}
+          height={200}
+          
         />
       </div>
 

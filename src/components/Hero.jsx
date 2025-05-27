@@ -63,7 +63,7 @@ const Hero = () => {
                 </a>
               </Button>
               <Button>
-                <a href="#">Contact Me</a>
+                <a href="#contact">Contact Me</a>
               </Button>
             </div>
           </div>

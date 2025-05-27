@@ -3,6 +3,7 @@ import webOpt from '../images/web-Optimization.png'
 import frontDebug from '../images/frontend-debug.png'
 import Ui from '../images/UI-UX.png'
 import animation from '../images/animation.png'
+import spa from '../images/spa.png'
 export const navigation = [
   {
     id: "0",
@@ -66,6 +67,6 @@ export const Serv =[
     id:"5",
     title:" Single Page Applications (SPAs) ",
     text:"Develop dynamic and fast SPAs using React and Next.js. ",
-    imageUrl: frontDebug
+    imageUrl: spa
   },
 ]

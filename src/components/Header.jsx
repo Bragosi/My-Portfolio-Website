@@ -6,7 +6,7 @@ import MenuSvg from "../assets/Svg/MenuSvg";
 import { HambugerMenu } from "./design/Header";
 import { useState } from "react";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-
+import bragosiLogo from '../images/bragosiLogo.png'
 const Header = () => {
   const pathName = useLocation();
   const handleClick = () => {
@@ -31,8 +31,9 @@ const Header = () => {
       }`}
     >
       <div className="flex  items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a href="#hero" className="block w-[12rem] xl:mr-8 ">
-          <img src={bragosi} width={90} height={40} alt="Brainwave" />
+        <a href="#hero" className="flex flex-row w-[12rem] xl:mr-8 ">
+          <img src={bragosiLogo} width={50} height={40} alt="Brainwave" />
+          <span className="text-2xl relative flex items-center justify-center font-palanquin">Bragosi</span>
         </a>
 
         <nav
