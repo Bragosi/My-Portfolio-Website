@@ -70,7 +70,7 @@ const About = () => {
     "Hi! 👋 I’m Oladejo Boluwatife, popularly known in the Tech space as Bragosi, a front-end developer skilled in React, Next.js, and TypeScript. I specialize in crafting functional, user-friendly web applications with clean, efficient code. With expertise and experience, I create engaging designs and animations. Let’s collaborate to build something amazing! 🚀";
 
   return (
-    <section id="about" className="mt-[10rem] px-6 md:px-12 lg:px-24 flex flex-col xl:flex-row">
+    <section id="about" className="mt-[15rem] md:mt-[18rem] lg:mt-[13rem] xl:mt-[9rem] px-6 md:px-12 lg:px-24 flex flex-col xl:flex-row">
       <div
         ref={imgRef}
         id="img"
@@ -95,7 +95,7 @@ const About = () => {
           <span className="block relative mt-2">
             <img
               src={curve}
-              alt="curve"k
+              alt="curve"
               className="mx-auto"
               width={200}
               height={28}

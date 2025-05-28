@@ -4,6 +4,13 @@ import frontDebug from '../images/frontend-debug.png'
 import Ui from '../images/UI-UX.png'
 import animation from '../images/animation.png'
 import spa from '../images/spa.png'
+import development from '../images/development.png'
+import testing from '../images/testing.png'
+import deployment from '../images/deployment.png'
+import maintainance from '../images/maintainance.png'
+import req from '../images/requirement.png'
+import design from '../images/design.png'
+
 export const navigation = [
   {
     id: "0",
@@ -25,8 +32,13 @@ export const navigation = [
     title: "Contact",
     url: "#contact",
   },
+   {
+    id: "4",
+    title: "My Approach",
+    url: "#approaches",
+  },
   {
-     id: "4",
+     id: "5",
     title: "View Github",
     url: "https://github.com/Bragosi",
     onlyMobile:true
@@ -69,4 +81,43 @@ export const Serv =[
     text:"Develop dynamic and fast SPAs using React and Next.js. ",
     imageUrl: spa
   },
+]
+
+export const approaches =[
+  {
+    id:1,
+    title:"Requirement Gathering & Planning",
+    text:"Every project starts with a deep dive into the client's goals and needs. I research, brainstorm, and create a clear roadmap to guide the development process.",
+    imageURL:req
+   },
+    {
+    id:2,
+    title:"Design & Prototyping",
+    text:"I craft intuitive and visually appealing designs, focusing on user experience. Using tools like Figma, I ensure the designs align perfectly with the client's vision.",
+    imageURL:design
+   },
+   {
+    id:3,
+    title:"Development",
+    text:"With clean and efficient code, I bring the designs to life. Leveraging modern frameworks and best practices, I ensure optimal performance and scalability.",
+    imageURL: development
+   },
+    {
+    id:4,
+    title:"Testing & Quality Assurance",
+    text:"No project is complete without rigorous testing. I ensure that everything is bug-free, responsive, and functional across devices and browsers.",
+    imageURL: testing
+   },
+    {
+    id:5,
+    title:"Deployment & Handover",
+    text:"After thorough testing, I deploy the project seamlessly to a live environment. I provide documentation and guidance to ensure a smooth handover.",
+    imageURL:deployment
+   },
+    {
+    id:6,
+    title:"Maintenance & Iteration",
+    text:"Even after deployment, I remain committed to the project's success. I provide support, updates, and optimizations based on feedback and new requirements.",
+    imageURL:maintainance
+   },
 ]

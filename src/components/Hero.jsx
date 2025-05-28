@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="pt-[8rem]  md:pt-[10rem] flex flex-col-reverse lg:flex-row items-center justify-center h-screen gap-8 bg-n-7"
+      className="pt-[8rem]  md:pt-[10rem] flex flex-col-reverse lg:flex-row items-center justify-center w-full md:max-h-screen lg:max-h-screen max-h-screen  gap-8 bg-n-7"
     >
       {/* Left Content */}
       <div className="relative px-6 md:px-10 lg:w-1/2 flex flex-col items-start">
@@ -75,7 +75,7 @@ const Hero = () => {
         <img
           src={Boluwatife}
           alt="Boluwatife"
-          className="max-w-[200px] md:max-w-[300px] lg:max-w-[400px] rounded-lg shadow-lg"
+          className="w-[300px]  mt-[9rem] md:w-[300px] md:mt-[-2rem] lg:w-[450px] lg:mt-[5rem] rounded-lg shadow-lg"
         />
       </div>
     </section>
