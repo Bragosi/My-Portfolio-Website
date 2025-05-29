@@ -6,7 +6,7 @@ function Footer() {
       <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
         {/* Final Message */}
         <p className="text-sm mb-4 md:mb-0">
-          © 2025 by Boluwatife. All rights reserved.
+          © 2025 by Bragosi. All rights reserved.
         </p>
 
         {/* Social Media Icons */}

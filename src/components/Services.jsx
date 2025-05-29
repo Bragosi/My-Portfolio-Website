@@ -32,7 +32,7 @@ const Services = () => {
   }, []);
 
   return (
-    <section id="services" className="mt-[4rem]" ref={sectionRef}>
+    <section id="services" className="mt-[4rem] pt-15" ref={sectionRef}>
       <div className="relative flex items-center flex-col justify-center">
         <h1 className="h3 font-palanquin"><span className="text-n-14">Services</span> I Offer</h1>
         <img src={curve} alt="curve" width={290} height={30} />
@@ -48,8 +48,8 @@ const Services = () => {
               alt={item.title}
               className="w-20 h-20 object-contain mb-4"
             />
-            <h2 className="text-xl font-bold mb-2 font-palanquin">{item.title}</h2>
-            <p className="text-gray-600 font-montserrat">{item.text}</p>
+            <h2 className="text-xl text-n-14 font-bold mb-2 font-palanquin">{item.title}</h2>
+            <p className="text-gray-300 font-montserrat">{item.text}</p>
           </div>
         ))}
       </div>

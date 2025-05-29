@@ -61,8 +61,8 @@ const Approaches = () => {
               alt={item.title}
               className="w-20 h-20 object-contain mb-4"
             />
-            <h2 className="text-xl font-palanquin mb-2">{item.title}</h2>
-            <p className="font-montserrat text-gray-600">{item.text}</p>
+            <h2 className="text-xl text-n-14 font-palanquin mb-2">{item.title}</h2>
+            <p className="font-montserrat text-gray-300">{item.text}</p>
           </div>
         ))}
       </div>

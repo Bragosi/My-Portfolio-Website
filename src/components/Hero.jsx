@@ -40,13 +40,13 @@ const Hero = () => {
           }}
         >
           <div className="p-6 bg-black rounded-[inherit]">
-            <p className="text-lg font-medium text-gray-600 font-palanquin">Hello, I'm a</p>
-            <h3 className="mt-2 text-3xl md:text-4xl font-semibold">
+            <p className="text-lg font-medium text-gray-300 font-palanquin">Hello, I'm a</p>
+            <h3 className="mt-2 text-3xl md:text-4xl font-semibold text-n-14">
               Front-End <span className="text-n-6">Developer</span>
             </h3>
             <p
               ref={textRef}
-              className="mt-4 text-gray-700 text-base md:text-lg leading-relaxed font-montserrat"
+              className="mt-4 text-gray-300 text-base md:text-lg leading-relaxed font-montserrat"
             >
               {text.split('').map((char, i) => (
                 <span key={i}>{char}</span>

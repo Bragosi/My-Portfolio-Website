@@ -90,7 +90,7 @@ const About = () => {
         id="abt"
         className="w-full relative shadow-lg rounded-2xl p-8 md:p-12"
       >
-        <h1 className="h2 text-3xl font-bold font-montserrat text-center mb-6">
+        <h1 className="h2 text-3xl font-bold font-montserrat text-center mb-6 text-n-14">
           About Me
           <span className="block relative mt-2">
             <img
@@ -102,7 +102,7 @@ const About = () => {
             />
           </span>
         </h1>
-        <p ref={textRef} className="text-lg leading-relaxed text-gray-700 text-center md:text-left font-montserrat">
+        <p ref={textRef} className="text-lg leading-relaxed text-gray-300 text-center md:text-left font-montserrat">
           {text.split("").map((char, i) => (
             <span key={i}>{char}</span>
           ))}
