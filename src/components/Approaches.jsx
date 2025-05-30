@@ -21,7 +21,7 @@ const Approaches = () => {
           {
             x: 0,
             opacity: 1,
-            duration: 2.5,
+            duration: 3,
             ease: "power2.out",
             scrollTrigger: {
               trigger: el,
@@ -34,17 +34,18 @@ const Approaches = () => {
   }, []);
 
   return (
-    <section id="approaches" className="mt-[8rem]">
-      <div className="relative flex flex-col justify-center items-center">
+    <section id="approaches" className="mt-[1rem]">
+    <div className="pt-[7rem]">
+        <div className="relative flex flex-col justify-center items-center">
         <h2 className="h3 font-palanquin">
-          My <span className="text-n-14">Approaches</span>
+          My <span className="text-n-14">Approach</span>
         </h2>
         <span className="relative flex">
           <img
             src={curve}
             alt="curve"
             className="mx-auto"
-            width={290}
+            width={330}
             height={30}
           />
         </span>
@@ -66,6 +67,7 @@ const Approaches = () => {
           </div>
         ))}
       </div>
+    </div>
     </section>
   );
 };

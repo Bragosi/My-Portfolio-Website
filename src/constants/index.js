@@ -27,19 +27,20 @@ export const navigation = [
     title: "Services",
     url: "#services",
   },
-  {
-    id: "3",
-    title: "Contact",
-    url: "#contact",
-  },
    {
-    id: "4",
+    id: "3",
     title: "My Approach",
     url: "#approaches",
   },
   {
+    id: "4",
+    title: "Contact",
+    url: "#contact",
+  },
+  
+  {
      id: "5",
-    title: "View Github",
+    title: "Vist Github",
     url: "https://github.com/Bragosi",
     onlyMobile:true
   }

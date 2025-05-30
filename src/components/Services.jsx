@@ -32,8 +32,9 @@ const Services = () => {
   }, []);
 
   return (
-    <section id="services" className="mt-[4rem] pt-15" ref={sectionRef}>
-      <div className="relative flex items-center flex-col justify-center">
+    <section id="services" className="mt-[22rem] lg:mt-[15rem] xl:mt-[3rem] pt-15" ref={sectionRef}>
+    <div className="pt-[7rem]">
+        <div className="relative flex items-center flex-col justify-center">
         <h1 className="h3 font-palanquin"><span className="text-n-14">Services</span> I Offer</h1>
         <img src={curve} alt="curve" width={290} height={30} />
       </div>
@@ -53,6 +54,7 @@ const Services = () => {
           </div>
         ))}
       </div>
+    </div>
     </section>
   );
 };
