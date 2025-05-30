@@ -32,7 +32,7 @@ const Services = () => {
   }, []);
 
   return (
-    <section id="services" className="mt-[-5rem] xl:mt-[3rem] pt-15" ref={sectionRef}>
+    <section id="services" className="mt-[2rem] xl:mt-[3rem] pt-15" ref={sectionRef}>
     <div className="pt-[7rem]">
         <div className="relative flex items-center flex-col justify-center">
         <h1 className="h3 font-palanquin"><span className="text-n-14">Services</span> I Offer</h1>
