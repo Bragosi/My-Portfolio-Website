@@ -34,7 +34,7 @@ const Approaches = () => {
   }, []);
 
   return (
-    <section id="approaches" className="mt-[1rem]">
+    <section id="approaches" className="mt-[5rem]">
     <div className="pt-[7rem]">
         <div className="relative flex flex-col justify-center items-center">
         <h2 className="h3 font-palanquin">
