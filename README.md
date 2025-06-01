@@ -6,7 +6,7 @@ Welcome to my portfolio website! This project showcases my skills, projects, and
 
 [View the live site here](https://my-portfolio-website-seven-lake.vercel.app/)
 
-![Portfolio Screenshot](![Screenshot_27-5-2025_21505_my-portfolio-website-seven-lake vercel app](https://github.com/user-attachments/assets/7f12a5df-588d-435b-b3b4-709d55363943)
+[Portfolio Screenshot](![Screenshot_27-5-2025_21505_my-portfolio-website-seven-lake vercel app](https://github.com/user-attachments/assets/7f12a5df-588d-435b-b3b4-709d55363943)
 )
 
 ---
