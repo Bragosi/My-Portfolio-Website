@@ -55,8 +55,7 @@ Open your browser and navigate to `http://localhost:3000` to view the project lo
 
 Feel free to reach out with any questions or feedback!
 
-- **Email**: [your-email@example.com](mailto:oladejoboluwatife20003@gmail.com)
-- **GitHub**: [Your GitHub Profile](https://github.com/Bragosi)
+- **Email**: [Click to send a message](mailto:oladejoboluwatife20003@gmail.com)
 
 ---
 
