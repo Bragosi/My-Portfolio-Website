@@ -29,27 +29,6 @@ Welcome to my portfolio website! This project showcases my skills, projects, and
 
 ---
 
-## Setup Instructions
-
-### Clone the Repository
-```bash
-git clone https://github.com/Bragosi/My-Portfolio-Website.git
-cd My-Portfolio-Website
-```
-
-### Install Dependencies
-```bash
-npm install
-```
-
-### Start the Development Server
-```bash
-npm run dev
-```
-
-Open your browser and navigate to `http://localhost:3000` to view the project locally.
-
----
 
 ## Contact Information
 
